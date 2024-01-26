@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="/Q5&Q6.js"></script>
+</head>
+
+<body>
+
+    
+    <main>
+        <section class="listSection">
+            <h2>Interface et/ou requêtes pour afficher les pièces dont le prix hors taxes est 
+                supérieur à un prix donné</h2>
+            <table>
+                <div class="btns" id="divbtn">
+                    <input id="prix" type="text" placeholder="prix donné">
+                    <button id="Prechercher"> Rechercher</button>
+                </div>
+                <thead>
+                    <tr>
+                        <th>IDPiece</th>
+                        <th>DescPiece</th>
+                        <th>PUHT</th>
+                        
+                    </tr>
+                    
+                </thead>
+                <tbody id="Ptbody">
+
+                </tbody>
+                
+            </table>
+            
+            
+        </section>
+        
+        <section class="listSection">
+            <h2>Interface et/ou requêtes pour afficher les ordres de réparation qui n’ont pas de 
+                pièces à changer (quantité =0)</h2>
+            <table>
+                <div class="btns" id="divbtn">
+                    <button id="Orechercher">afficher les ordres de réparation qui n’ont pas de 
+                        pièces à changer</button>
+                    
+                </div>
+                <thead>
+                    <tr>
+                        <th>IDOrdre</th>
+                        <th>DiagnosticPanne</th>
+                        <th>NbHeuresMO</th>
+                        <th>IDApp</th>
+                    </tr>
+                </thead>
+                <tbody id="Otbody">
+
+                </tbody>
+                
+            </table>
+            
+            
+        </section>
+    </main>
+</body>
+
+</html>

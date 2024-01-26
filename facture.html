@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="/facture.js"></script>
+</head>
+
+<body>
+
+    
+    <main>
+        <section class="formSection">
+            <h2>Facture Total</h2>
+            <div>
+                <div class="inputs">
+                    <label for="client">pièces à changer</label>
+                    <input id="IDPiece" type="text" placeholder="IDPiece">
+                    <input id="IDOrdre" type="text"  placeholder="IDOrdre">
+                    <input id="Quantite" type="text" placeholder="Quantité">
+                    </div>
+                <div class="btns">
+                    
+                    
+                    <button id="ajouterBtn">calculer facture</button>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="listSection">
+            <h2>FACTURE EST :</h2>
+            <table>
+                
+                <thead>
+                    <tr>
+                        <th>Nom client</th>
+                        <th>Montant HT Total</th>
+                        <th>Montant TTC Total</th>
+                        
+                    </tr>
+                    
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+                
+            </table>
+            
+            
+        </section>
+       
+    </main>
+</body>
+
+</html>

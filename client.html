@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="/client.js"></script>
+</head>
+
+<body>
+
+    
+    <main>
+        <section class="formSection">
+            <h2>Insérer un ordre de réparation pour un appareil</h2>
+            <div>
+                <div class="inputs">
+                    <label for="client">info client </label>
+
+                    <input id="NomCli" type="text" placeholder="Nom client ">
+                    <input id="AdrCli" type="text"  placeholder="adresse client ">
+                    <input id="VilleCli" type="text" placeholder="Ville client">
+                    <input id="CIN" type="text" placeholder="CIN client">
+                    <label for="IDCat">choisir CATEGORIE</label>
+                    <select id="IDCat" >
+                        <option value="TV">TV</option>
+                        <option value="PHONE">PHONE</option>
+                        <option value="PC">PC</option>
+                    </select>
+                    <label for="APPAREIL">info APPAREIL </label>
+                    <input id="IDApp" type="text" placeholder="IDApp">
+                    <input id="DescApp" type="text" placeholder="DescApp">
+                    <input id="RefConstApp" type="text"  placeholder="RefConstApp">
+                    <input id="MarqueApp" type="text" placeholder="MarqueApp">
+                    <label for="APPAREIL">ORDRE REPARATION</label>
+                    <input id="DiagnosticPanne" type="text" placeholder="DiagnosticPanne">
+                    <input id="NbHeuresMO" type="text"  placeholder="NbHeuresMO">
+                    
+
+                </div>
+                <div class="btns">
+                    
+                    
+                    <button id="ajouterBtn">ajouter</button>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="listSection">
+            <h2>Rechercher une cliente par son nom</h2>
+            <table>
+                <div class="btns" id="divbtn">
+                    <input id="NomCliInput" type="text" placeholder="nom de client ">
+                    <button id="rechercher"> Rechercher</button>
+                    <span id="spanMoyen"></span>
+                </div>
+                <thead>
+                    <tr>
+                        <th>IDCli</th>
+                        <th>NomCli</th>
+                        <th>AdrCli</th>
+                        <th>VilleCli</th>
+                    </tr>
+                    
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+                
+            </table>
+            
+            
+        </section>
+    </main>
+</body>
+
+</html>
